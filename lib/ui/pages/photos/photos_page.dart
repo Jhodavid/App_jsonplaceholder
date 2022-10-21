@@ -1,4 +1,5 @@
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:jonathans_technical_test/domain/blocs/all_data/all_data_bloc.dart';
@@ -49,6 +50,9 @@ class _PhotoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+
     return Card(
       // color: Colors.green,
       margin: const EdgeInsets.symmetric( horizontal: 10, vertical: 5 ),
@@ -59,9 +63,9 @@ class _PhotoCard extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: FadeInImage(
-                  placeholder: const AssetImage('loading.gif'),
+                  placeholder: const AssetImage('assets/no-image.jpg'),
                   image: NetworkImage(photo.url),
-                  height: 140,
+                  height: height*0.165,
                   fit: BoxFit.cover,
                 ),
               ),

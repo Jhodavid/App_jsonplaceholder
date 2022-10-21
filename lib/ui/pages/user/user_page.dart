@@ -148,16 +148,7 @@ class _InfoUser extends StatelessWidget {
                   ),
                   Padding(
                     padding: EdgeInsets.only( left:  width*0.015 ),
-                    child: Text('${user.address.street} ${user.address.suite}, ${user.address.city}', maxLines: 2, style: TextStyle(
-                      fontSize: width*0.029,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only( left:  width*0.015 ),
-                    child: Text(user.address.city, maxLines: 2, style: TextStyle(
+                    child: Text(user.website, maxLines: 2, style: TextStyle(
                       fontSize: width*0.029,
                       fontWeight: FontWeight.bold,
                       color: Colors.black
