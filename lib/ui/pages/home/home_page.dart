@@ -56,7 +56,6 @@ class _UserCard extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
 
     return GestureDetector(
       onTap: () {
@@ -73,7 +72,7 @@ class _UserCard extends StatelessWidget {
                 child: Text(user.name, style: TextStyle(
                   fontSize: width*0.037,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 70, 70, 70)
+                  color: const Color.fromARGB(255, 70, 70, 70)
                   ),
                 ),
               ),
@@ -83,7 +82,7 @@ class _UserCard extends StatelessWidget {
                 child: Text('Email:', maxLines: 2, style: TextStyle(
                   fontSize: width*0.03,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 0, 68, 255)
+                  color: const Color.fromARGB(255, 0, 68, 255)
                   ),
                 ),
               ),
@@ -102,7 +101,7 @@ class _UserCard extends StatelessWidget {
                 child: Text('Ciudad:', maxLines: 2, style: TextStyle(
                   fontSize: width*0.03,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 0, 68, 255)
+                  color: const Color.fromARGB(255, 0, 68, 255)
                   ),
                 ),
               ),
@@ -121,7 +120,7 @@ class _UserCard extends StatelessWidget {
                 child: Text('Compañía:', maxLines: 2, style: TextStyle(
                   fontSize: width*0.03,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 0, 68, 255)
+                  color: const Color.fromARGB(255, 0, 68, 255)
                   ),
                 ),
               ),

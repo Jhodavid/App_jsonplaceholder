@@ -1,4 +1,4 @@
-import 'package:cached_network_image/cached_network_image.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:jonathans_technical_test/domain/blocs/all_data/all_data_bloc.dart';
@@ -60,8 +60,7 @@ class _PhotoCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 child: FadeInImage(
                   placeholder: const AssetImage('loading.gif'),
-                  image: NetworkImage(photo.thumbnailUrl),
-                  // width: 130,
+                  image: NetworkImage(photo.url),
                   height: 140,
                   fit: BoxFit.cover,
                 ),

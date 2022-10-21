@@ -12,7 +12,6 @@ class UserPage extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
 
     final User user = ModalRoute.of(context)!.settings.arguments as User;
     final allDataBloc = BlocProvider.of<AllDataBloc>(context);
