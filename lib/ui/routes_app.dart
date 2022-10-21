@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:jonathans_technical_test/domain/entities/router_option.dart';
 import 'package:jonathans_technical_test/ui/pages/home/home_page.dart';
 import 'package:jonathans_technical_test/ui/pages/loading/loading_page.dart';
+import 'package:jonathans_technical_test/ui/pages/user/user_page.dart';
+
+import 'pages/photos/photos_page.dart';
 
 class AppRoutes {
   
@@ -10,6 +13,8 @@ class AppRoutes {
   static final routerOptions = <RouterOption>[
     RouterOption( route: 'loading', page: const LoadingPage() ),
     RouterOption( route: 'home', page: const HomePage() ),
+    RouterOption( route: 'user', page: const UserPage() ),
+    RouterOption( route: 'photos', page: const PhotosPage() ),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
